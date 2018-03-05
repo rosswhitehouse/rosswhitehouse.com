@@ -1,0 +1,232 @@
+$yellow: #FFD54F;
+$red: #e95949;
+$blue: #52a7e0;
+$grey: #222;
+$white: #e6e6e6;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'PT Mono', monospace, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: 0.6em;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+div {
+    font-size: 3rem;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 0.8em;
+}
+
+em {
+    font-style: normal;
+    position: relative;
+    background: linear-gradient(to bottom, transparent 0%, transparent 45%, $yellow 46%, $yellow 70%, transparent 71%, transparent 100%);
+}
+
+a {
+    text-decoration: underline;
+    &:hover {
+        background: $white;
+    }
+}
+
+.panel:not(.header) {
+    em {
+    }
+}
+
+.header {
+    background: white;
+    box-sizing: border-box;
+
+    &__intro {
+        color: $grey;
+        max-width: 800px;
+        margin: 0 auto;
+
+        span {
+            display: inline-block;
+        }
+    }
+}
+
+.contact {
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+    &:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $grey;
+        content: '';
+        height: 1px;
+        width: 100%;
+        display: block;
+        z-index: 0;
+    }
+    .icons {
+        display: inline-block;
+        background: white;
+        padding: 10px;
+        z-index: 2;
+        position: relative;
+        >a {
+            border-radius: 100%;
+            background: $grey;
+            color: white;
+            padding: 2px;
+            display: inline-block;
+            font-size: 2rem;
+            height: 1em;
+            width: 1em;
+            text-align: center;
+            font-size: 3rem;
+            margin: 0 5px;
+            line-height: 1;
+            &:hover {
+                color: white;
+                background: $yellow;
+            }
+        }
+    }
+}
+
+.heading {
+    margin-bottom: 0.4em;
+    line-height: 1em;
+    display: inline-block;
+    padding: 4px 10px 2px 5px;
+    margin: 0.8em 0 0.4em;
+
+    &--grey {
+        background: white;
+        color: $grey;
+    }
+
+    &--white {
+        background: $grey;
+        color: white;
+    }
+}
+
+.main {
+    background: $grey;
+    height: auto;
+    color: white;
+
+    .panel {
+        &:nth-of-type(odd) {
+            background: $yellow;
+            em {
+                background: linear-gradient(to bottom, transparent 0%, transparent 45%, white 46%, white 70%, transparent 71%, transparent 100%);
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                margin-bottom: 5rem;
+            }
+        }
+    }
+}
+
+.footer.panel {
+    color: $grey;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.panel {
+    padding: 10rem 2.5rem;
+    color: $grey;
+    >div {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    // &--yellow {
+    //     background: $yellow;
+    // }
+    // &--red {
+    //     background: $red;
+    // }
+    // &--blue {
+    //     background: $blue;
+    // }
+    background: white;
+
+    h2, h3 {
+        margin-bottom: 0.4em;
+        line-height: 1em;
+        display: inline-block;
+        padding: 4px 10px 2px 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 8px;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .header {
+        position: relative;
+        width: 100%;
+        height: auto;
+        &__intro {
+            height: auto;
+            margin-top: 0;
+        }
+    }
+    .main {
+        position: relative;
+        min-height: 0;
+        width: 100%;
+    }
+    .panel {
+        padding: 3rem 2.4rem;
+    }
+    .contact {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    html {
+        font-size: 5px;
+    }
+}
