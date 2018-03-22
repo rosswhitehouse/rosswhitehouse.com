@@ -176,16 +176,6 @@ a {
         max-width: 800px;
         margin: 0 auto;
     }
-
-    // &--yellow {
-    //     background: $yellow;
-    // }
-    // &--red {
-    //     background: $red;
-    // }
-    // &--blue {
-    //     background: $blue;
-    // }
     background: white;
 
     h2, h3 {
@@ -227,6 +217,6 @@ a {
 
 @media screen and (max-width: 430px) {
     html {
-        font-size: 5px;
+        font-size: 7px;
     }
 }
