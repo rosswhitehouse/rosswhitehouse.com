@@ -1,8 +1,0 @@
-@keyframes drawArrow {
-	50% {
-		stroke-dashoffset: -100;
-	}
-	100% {
-		stroke-dashoffset: 100;
-	}
-}

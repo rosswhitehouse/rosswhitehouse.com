@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import Slider from './Slider';
 import Contact from './Contact';
 
 const Intro = () => {
