@@ -1,6 +1,4 @@
 $yellow: #FFAB40;
-$red: #e95949;
-$blue: #52a7e0;
 $grey: #222;
 $white: #e6e6e6;
 
@@ -105,17 +103,16 @@ a {
             border-radius: 100%;
             background: black;
             color: white;
-            padding: 2px;
+            padding: 5px;
             display: inline-block;
-            font-size: 2rem;
             height: 1em;
             width: 1em;
             text-align: center;
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin: 0 5px;
             line-height: 1;
             &:hover {
-                color: white;
+                color: black;
                 background: $yellow;
             }
         }
