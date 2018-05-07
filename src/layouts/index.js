@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import Header from '../layouts/Header';
 import Footer from '../layouts/Footer';
 
-import '../style/foundation-icons.css'
 import '../style/app.scss'
 
 const TemplateWrapper = ({ children }) => (

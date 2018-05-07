@@ -1,14 +1,21 @@
 import React from 'react';
+import TwitterSVG from './svgs/TwitterSVG';
+import InstagramSVG from './svgs/InstagramSVG';
+import CodepenSVG from './svgs/CodepenSVG';
+import MailSVG from './svgs/MailSVG';
+import GithubSVG from './svgs/GithubSVG';
+import MediumSVG from './svgs/MediumSVG';
 
 const Contact = () => {
     return (
         <div className="contact">
             <div className="icons">
-                <a href="https://twitter.com/RossWhitehouse" className="twitter yellow"><i className="fi-social-twitter"></i></a>
-                <a href="https://www.instagram.com/ross.dw/" className="insta red"><i className="fi-social-instagram"></i></a>
-                <a href="mailto:ross.dw@live.com" className="mail blue"><i className="fi-mail"></i></a>
-                <a href="https://github.com/rosswhitehouse" className="git yellow"><i className="fi-social-github"></i></a>
-                <a href="https://medium.com/@RossWhitehouse" className="medium red"><i className="fi-social-medium"></i></a>
+                <a href="https://twitter.com/RossWhitehouse"><TwitterSVG /></a>
+                <a href="https://www.instagram.com/ross.dw/"><InstagramSVG /></a>
+                <a href="https://www.codepen.io/rossdw"><CodepenSVG /></a>
+                <a href="mailto:ross.dw@live.com"><MailSVG /></a>
+                <a href="https://github.com/rosswhitehouse"><GithubSVG /></a>
+                <a href="https://medium.com/@RossWhitehouse"><MediumSVG /></a>
             </div>
         </div>
     )

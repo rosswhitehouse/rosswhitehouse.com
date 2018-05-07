@@ -81,39 +81,30 @@ a {
 .contact {
     text-align: center;
     position: relative;
-    margin-top: 5rem;
-    &:before {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: black;
-        content: '';
-        height: 1px;
-        width: 100%;
-        display: block;
-        z-index: 0;
-    }
+    margin-top: 3rem;
     .icons {
-        display: inline-block;
+        display: block;
         background: white;
-        padding: 10px;
         z-index: 2;
         position: relative;
+        padding: 0 10px;
+        text-align: left;
         >a {
-            border-radius: 100%;
-            background: black;
-            color: white;
+            color: darken($yellow, 15%);
             padding: 5px;
             display: inline-block;
             height: 1em;
-            width: 1em;
+            width: 8%;
             text-align: center;
-            font-size: 2.8rem;
-            margin: 0 5px;
+            font-size: 6rem;
             line-height: 1;
+            margin-right: 2%;
+            >svg {
+                width: 100%;
+            }
             &:hover {
                 color: black;
-                background: $yellow;
+                background: none;
             }
         }
     }
