@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
-import Header from '../layouts/Header';
-import Footer from '../layouts/Footer';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 import '../style/app.scss'
 
