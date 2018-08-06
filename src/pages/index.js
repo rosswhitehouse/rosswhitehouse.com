@@ -17,15 +17,14 @@ export const query = graphql`
         edges {
           node {
             id
-           colour
-           name
-           content {
-             childMarkdownRemark {
-               html
-             }
-           }
+            name
+            content {
+              childMarkdownRemark {
+                html
+              }
+            }
           }
-       }
+        }
       }
    }
 `;
