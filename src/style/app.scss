@@ -60,11 +60,6 @@ a {
     }
 }
 
-.panel:not(.header) {
-    em {
-    }
-}
-
 .header {
     background: white;
     box-sizing: border-box;
@@ -135,7 +130,7 @@ a {
 
     .panel {
         &:nth-of-type(odd) {
-            background: $yellow;
+            background-image: linear-gradient(to bottom, #ffa83a, #ffa230, #ff9d24, #ff9716, #ff9100);
         }
 
         ul {
