@@ -1,7 +1,12 @@
 exports.handler = function (event, context, callback) {
-  callback(null, {
-    statusCode: 200,
-    body: `path: ${event.path}, http: ${event.httpMethod}, headers: ${event.headers}, params: ${event.queryStringParameters}, body: ${event.body}`
-  })
-  return console.log('hello')
+  const { name } = JSON.parse(event.body);
+
+  if (name === 'Ross') {
+    callback(null, {
+      statusCode: 200,
+      body: JSON.stringify({ msg: `hello ${name}` })
+    })
+  } else {
+    callback(new Error("You're not Ross! Get out of here!"))
+  }
 }
