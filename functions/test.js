@@ -1,6 +1,6 @@
 exports.handler = function (event, context, callback) {
   callback(null, {
     statusCode: 200,
-    body: 'hello world'
+    body: `path: ${event.path}, http: ${event.httpMethod}, headers: ${event.headers}, params: ${event.queryStringParameters}, body: ${event.body}`
   })
 }
