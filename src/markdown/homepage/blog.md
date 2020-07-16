@@ -2,6 +2,7 @@
 slug: "/blog"
 date: "2020/07/16"
 title: "3. Blog"
+id: 3
 posttype: "homepage-section"
 ---
 ## And here's some things I've written! _I like to write_ about _new techniques_ I learn, and _tutorials_ to remind myself how to function.

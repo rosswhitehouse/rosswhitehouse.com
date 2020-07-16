@@ -2,6 +2,7 @@
 slug: "/portfolio"
 date: "2020/07/16"
 title: "2. Portfolio"
+id: 2
 posttype: "homepage-section"
 ---
 ## Here's some of the things I've made. Some for _love_, some for _money_!  

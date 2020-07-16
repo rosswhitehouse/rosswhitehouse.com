@@ -2,6 +2,7 @@
 slug: "/about"
 date: "2020/07/16"
 title: "1. About"
+id: 1
 posttype: "homepage-section"
 ---
 ## I work in _Javascript, CSS and HTML_. Here's a bit more about me
