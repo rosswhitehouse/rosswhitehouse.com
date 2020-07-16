@@ -21,9 +21,12 @@ export default IndexPage;
 
 export const query = graphql`
     query pageQuery {
-      allMarkdownRemark(filter: {
-        frontmatter: {posttype: {eq: "homepage-section"}}
-    }) {
+      allMarkdownRemark(
+        filter: {
+          frontmatter: {posttype: {eq: "homepage-section"}}
+        },
+        sort: {order: ASC, fields: frontmatter___id}
+      ) {
     edges {
       node {
         html
