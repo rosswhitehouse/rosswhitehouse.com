@@ -3,9 +3,9 @@ import Intro from '../components/Intro';
 
 const Header = () => {
     return (
-        <div className="header panel">
+        <header className="header panel">
             <Intro />
-        </div>
+        </header>
     );
 }
 

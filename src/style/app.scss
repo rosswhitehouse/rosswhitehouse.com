@@ -150,7 +150,8 @@ a {
 
 .panel {
     padding: 10rem 2.5rem;
-    >div {
+    >div,
+    >article {
         max-width: 800px;
         margin: 0 auto;
     }
@@ -163,6 +164,45 @@ a {
         padding: 4px 10px 2px 5px;
     }
 }
+
+.blog-page {
+    .hero {
+        background: white;
+        font-size: 2rem;
+        padding: 2.5rem;
+    }
+    header {
+        text-align: center;
+        h1 {
+            font-size: 5rem;
+            line-height: 1em;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        background: white;
+    }
+    article {
+        font-size: 2rem;
+        h2 {
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+    }
+    pre {
+        background: rgba(0,0,0,0.05);
+        color: rgba(0,0,0,0.8);
+        padding: 0.5rem 1rem;
+        font-family: monospace;
+        overflow-x: auto;
+        overflow-wrap: break-word;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 640px) {
     html {
