@@ -1,4 +1,5 @@
-$yellow: #FFAB40;
+$main: #ff7f50;
+$highlight: lighten(coral, 15%);
 $grey: #222;
 $white: #e6e6e6;
 
@@ -9,8 +10,8 @@ html {
 body {
     font-family: 'Space Mono', monospace, Helvetica, sans-serif;
     margin: 0;
-    background: $yellow;
-    border-top: 5px solid $yellow;
+    background: $main;
+    border-top: 5px solid $main;
 }
 
 h1, h2, h3, h4, h5 {
@@ -50,7 +51,7 @@ p {
 em {
     font-style: normal;
     position: relative;
-    background: linear-gradient(to bottom, transparent 0%, transparent 33%, lighten($yellow, 15%) 34%, lighten($yellow, 15%) 79%, transparent 80%, transparent 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 33%, $highlight 34%, $highlight 79%, transparent 80%, transparent 100%);
 }
 
 a {
@@ -87,7 +88,7 @@ a {
         padding: 0 10px;
         text-align: left;
         >a {
-            color: darken($yellow, 15%);
+            color: darken($main, 15%);
             padding: 5px;
             display: inline-block;
             height: 1em;
@@ -130,7 +131,7 @@ a {
 
     .panel {
         &:nth-of-type(odd) {
-            background-image: linear-gradient(to bottom, #ffa83a, #ffa230, #ff9d24, #ff9716, #ff9100);
+            background-image: linear-gradient(to bottom, lighten($main, 5%), $main);
         }
 
         ul {
