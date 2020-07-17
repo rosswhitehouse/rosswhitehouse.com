@@ -12,7 +12,7 @@ Software Engineer focussed on JavaScript and Front-End, but I've had experience 
 * ### [Hotjar](https://www.hotjar.com)
   - Nov 2018 - Present.
   - Tech: React, Python, SQLAlchemy, Gitlab, Jenkins.
-  - Responsibilities: Solving complex customer issues, building features to help internal-user debugging and customer self service.
+  - Responsibilities: Solving complex customer issues, building features to provide customer self service where possible, and help internal users with debugging.
   - Notable works: Internal tools, third-tier customer support.
 
 * ### [ITG (formerly Connect Group)](https://www.itg.co.uk/)
