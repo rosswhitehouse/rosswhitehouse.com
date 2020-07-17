@@ -1,22 +1,19 @@
 import React from 'react'
-import Main from '../components/Main'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 import '../style/app.scss'
 import '../style/cv.scss'
 
-const IndexPage = ({ data }) => {
+const CVPage = ({ data }) => {
   return (
-    <>
+    <div class="cv">
       <main className="main">
         <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
       </main>
-    </>
+    </div>
   )
 }
 
-export default IndexPage;
+export default CVPage;
 
 export const query = graphql`
     query cvQuery {
