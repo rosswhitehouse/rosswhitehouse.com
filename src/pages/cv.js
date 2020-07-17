@@ -9,7 +9,9 @@ import '../style/cv.scss'
 const IndexPage = ({ data }) => {
   return (
     <>
-      <main className="main" dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
+      <main className="main">
+        <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
+      </main>
     </>
   )
 }

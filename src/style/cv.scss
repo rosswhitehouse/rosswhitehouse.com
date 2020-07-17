@@ -16,8 +16,12 @@ p, div {
 }
 
 main {
-  max-width: 720px;
-  margin: 0 auto;
+  background: white;
+  padding: 1rem 0;
+  &>div {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 }
 
 ul {
