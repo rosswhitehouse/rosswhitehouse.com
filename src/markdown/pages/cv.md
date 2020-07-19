@@ -11,13 +11,13 @@ Software Engineer focussed on JavaScript and Front-End, but I've had experience 
 
 * ### [Hotjar](https://www.hotjar.com)
   - _Nov 2018 - Present_.
-  - _Tech:_ React, Python, SQLAlchemy, Gitlab, Jenkins.
+  - _Tech:_ React, Testing-Library, Jest, Python, Flask, Pytest, SQLAlchemy, Gitlab, Jenkins.
   - _Responsibilities:_ Solving complex customer issues, building features to provide customer self service where possible, and help internal users with debugging.
   - _Notable works:_ Internal tools, third-tier customer support.
 
 * ### [ITG (formerly Connect Group)](https://www.itg.co.uk/)
   - Dec 2017 - Nov 2018.
-  - _Tech:_ React, Redux, Gitlab, Jenkins.
+  - _Tech:_ React, Jest, Enzyme, Redux, Gitlab, Jenkins.
   - _Responsibilities:_ Maintaining and improving the finance calculator to client specification, with a focus on usability and accessibility.
   - _Notable works:_ [Jaguar/Land Rover finance calculator](https://www.landrover.co.uk/offers-and-finance/finance-calculator.html#/models).
 
