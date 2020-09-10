@@ -11,7 +11,7 @@ Software Engineer focussed on JavaScript and Front-End, but I've had experience 
 
 * ### [Hotjar](https://www.hotjar.com)
   - _Nov 2018 - Present_.
-  - _Tech:_ React, Vue, Testing-Library, Jest, Python, Flask, Pytest, SQLAlchemy, Gitlab, Jenkins.
+  - _Tech:_ React, Vue, Testing-Library, Jest, Python, Flask, Pytest, SQLAlchemy, Gitlab CI/CD, Jenkins.
   - _Responsibilities:_ Solving complex customer issues, being the 'voice' of the user within Engineering, building features to provide customer self service where possible, and help internal users with debugging.
   - _Notable works:_ Internal tools, third-tier customer support, self-service in the [Knowledge Base](https://help.hotjar.com).
 
