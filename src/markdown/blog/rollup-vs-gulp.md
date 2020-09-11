@@ -2,6 +2,7 @@
 slug: "rollup-vs-gulp"
 date: "2020/09/11"
 title: "Rollup Vs Gulp"
+type: "post"
 ---
 # Rollup Vs Gulp
 
