@@ -7,13 +7,13 @@ import '../style/app.scss'
 
 const IndexPage = ({ data }) => {
   return (
-    <>
+    <div className="home">
       <Header />
       <main className="main">
         <Main panels={data.allMarkdownRemark.edges} />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
