@@ -5,7 +5,7 @@ import '../style/cv.scss'
 
 const CVPage = ({ data }) => {
   return (
-    <div class="cv">
+    <div className="cv">
       <main className="main">
         <div dangerouslySetInnerHTML={{ __html: data.allMarkdownRemark.edges[0].node.html }} />
       </main>
