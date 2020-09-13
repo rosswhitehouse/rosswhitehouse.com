@@ -2,6 +2,7 @@
 
 .post-container {
   .panel {
+    font-size: 2.5rem;
     >* {
       max-width: 800px;
       margin: 0 auto;
@@ -28,17 +29,20 @@
       margin-bottom: 2rem;
     }
 
-    p:not(:last-of-type) {
-      margin-bottom: 5rem;
+    p {
+      &:not(:last-of-type) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    li {
+      margin-bottom: 2rem;
     }
   }
 
   &.all-posts {
     h2 {
       font-size: 3.5rem;
-    }
-    p {
-      font-size: 2.5rem;
     }
     li:not(:last-of-type) {
       margin-bottom: 10rem;

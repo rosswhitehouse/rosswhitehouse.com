@@ -15,4 +15,4 @@ Check out some _blogs_ I've written about what I do, they've been published on t
 * [The Power of Nth Child and All-CSS Dynamic Widths](/posts/nth-child)
 * [Git-ing Started (with GitHub)](https://medium.com/@RossWhitehouse/git-ing-started-with-github-2ed2a67f7856)
 
-[\[See More\]](/posts)
+[[See More](/posts)]

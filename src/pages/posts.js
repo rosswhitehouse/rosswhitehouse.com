@@ -19,7 +19,7 @@ const PostsPage = ({ data }) => {
                 <li key={slug} >
                   <h2><a href={`/posts/${slug}`}>{title}</a></h2>
                   <p>{excerpt}</p>
-                  <a href={`/posts/${slug}`}><em>[Read More]</em></a>
+                  [<a href={`/posts/${slug}`}><em>Read More</em></a>]
                 </li>
               );
             })}
