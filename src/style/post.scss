@@ -1,0 +1,47 @@
+@import 'variables';
+
+.post-container {
+  .panel {
+    >* {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    &.post-header {
+      background: $main;
+
+      h1 {
+        font-size: 6rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+  
+      p {
+        font-size: 2.4rem;
+        text-align: center;
+        display: block; 
+      }
+    }
+    
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    p:not(:last-of-type) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &.all-posts {
+    h2 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 2.5rem;
+    }
+    li:not(:last-of-type) {
+      margin-bottom: 10rem;
+    }
+  }
+}

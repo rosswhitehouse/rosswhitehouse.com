@@ -11,8 +11,8 @@ body {
     font-family: 'Space Mono', monospace, Helvetica, sans-serif;
     margin: 0;
     background: $main;
-    border-top: 5px solid $main;
-    border-bottom: 5px solid $main;
+    border-top: 1rem solid $main;
+    border-bottom: 1rem solid $main;
 }
 
 h1, h2, h3, h4, h5 {
@@ -145,8 +145,7 @@ a {
 }
 
 .footer.panel {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 10rem 0;
 }
 
 .panel {
@@ -156,7 +155,17 @@ a {
         max-width: 800px;
         margin: 0 auto;
     }
+<<<<<<< Updated upstream
     background: white;
+=======
+
+    &.blank {
+        height: 1rem;
+        padding: 0;
+        background: $main;
+    }
+}
+>>>>>>> Stashed changes
 
     h2, h3 {
         margin-bottom: 0.4em;
@@ -202,6 +211,10 @@ a {
     img {
         max-width: 100%;
     }
+}
+
+.codepen {
+    margin: 0 auto;
 }
 
 
