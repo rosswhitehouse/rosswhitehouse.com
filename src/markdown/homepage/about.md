@@ -11,4 +11,6 @@ I built my first crappy _WordPress_ website at 18. I have a BA that nobody's eve
 
 I work for [_Hotjar_](https://hotjar.com), we make awesome free web analytics tools and have a world-class support team (not-so-humble brag). I'm responsible for making internal tools and debugging users' websites. We're an innovative, progressive, remote-first team that has some crazy perks. [We're always hiring](https://hotjar.com/careers).
 
+I'm also a volunteer, mentor and instructor at [_BlackCodHer_](https://blackcodher.com/), a programme teaching young, unemployed or low-income black women to code.
+
 If you need any work doing, you're looking for tech speakers or you're hosting a local web meet-up, _please get in touch with me_!
