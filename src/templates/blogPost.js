@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import { graphql } from "gatsby"
 
 import '../style/prism-theme.scss'
@@ -13,6 +14,9 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <>
+      <Helmet>
+        <title>{frontmatter.title} - Ross Whitehouse</title>
+      </Helmet>
       <div className="post-container">
         <div className="post-header panel">
           <h1>{frontmatter.title}</h1>

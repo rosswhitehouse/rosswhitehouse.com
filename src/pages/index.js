@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Main from '../components/Main'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -8,6 +9,9 @@ import '../style/app.scss'
 const IndexPage = ({ data }) => {
   return (
     <div className="home">
+      <Helmet>
+        <title>Ross Whitehouse</title>
+      </Helmet>
       <Header />
       <main className="main">
         <Main panels={data.allMarkdownRemark.edges} />

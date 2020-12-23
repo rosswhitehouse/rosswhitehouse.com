@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby';
 
 import '../style/post.scss'
@@ -7,6 +8,9 @@ import Footer from '../components/Footer';
 const PostsPage = ({ data }) => {
   return (
     <>
+      <Helmet>
+        <title>Posts - Ross Whitehouse</title>
+      </Helmet>
       <div className="post-container all-posts">
         <div className="panel post-header">
           <h1>All Posts</h1>
