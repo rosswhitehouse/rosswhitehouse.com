@@ -26,7 +26,11 @@ export default function Template({
           className="post-content panel"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <div className="panel blank"></div>
+        <div className="panel blank" />
+        <div className="panel">
+          <p>I don't have comments on my blog, but I'd love to hear from you! Find me on <a href="https://twitter.com/RossWhitehouse">Twitter</a>, or <a href={`mailto:ross.dw94@gmail.com?subject=Comment on ${frontmatter.title}`}>Email me</a>.</p>
+        </div>
+        <div className="panel blank" />
       </div>
       <Footer />
     </>
