@@ -1,9 +1,9 @@
-@import 'variables';
+@import "variables";
 
 .post-container {
   .panel {
-    font-size: 2.5rem;
-    >* {
+    font-size: 2rem;
+    > * {
       max-width: 800px;
       margin: 0 auto;
     }
@@ -16,17 +16,25 @@
         text-align: center;
         margin-bottom: 2rem;
       }
-  
+
       p {
         font-size: 2.4rem;
         text-align: center;
-        display: block; 
+        display: block;
       }
     }
-    
+
     h2 {
       font-size: 4rem;
       margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 3.5rem;
+    }
+
+    h4 {
+      font-size: 3rem;
     }
 
     p {

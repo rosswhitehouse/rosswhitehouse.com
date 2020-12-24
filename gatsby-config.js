@@ -47,11 +47,11 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-web-font-loader`,
       options: {
-        fonts: [
-          `Space Mono\:400, 700`
-        ]
+        google: {
+          families: ['Space Mono', 'Montserrat']
+        }
       }
     }
   ],

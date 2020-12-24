@@ -28,6 +28,7 @@ export default function Template({
         />
         <div className="panel blank" />
         <div className="panel">
+          <h2>Thanks for Reading!</h2>
           <p>I don't have comments on my blog, but I'd love to hear from you! Find me on <a href="https://twitter.com/RossWhitehouse">Twitter</a>, or <a href={`mailto:ross.dw94@gmail.com?subject=Comment on ${frontmatter.title}`}>Email me</a>.</p>
         </div>
         <div className="panel blank" />
