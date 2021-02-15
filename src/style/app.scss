@@ -127,13 +127,15 @@ li {
 }
 
 .panel {
-  padding: 10rem 2.5rem;
+  padding: 15rem 2.5rem;
   background: var(--background);
+  transform: skew(0deg, -3deg);
 
   > div,
   > article {
     max-width: 960px;
     margin: 0 auto;
+    transform: skew(0deg, 3deg);
   }
 
   &.blank {

@@ -21,13 +21,14 @@ body {
   position: fixed;
   top: 20px;
   left: calc(100vw - 150px);
-  background: rgba(255, 255, 255, 0.5);
+  background: #ddd;
   width: 130px;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
   box-sizing: border-box;
+  z-index: 1;
 
   .theme-switcher-button {
     box-sizing: border-box;
@@ -37,6 +38,7 @@ body {
     border-radius: 5px;
     margin: 5px;
     padding: 0;
+    cursor: pointer;
 
     &.yellow {
       background: linear-gradient(
@@ -45,6 +47,10 @@ body {
         var(--yellow) 50%,
         var(--yellow) 100%
       );
+
+      &:hover {
+        border-color: var(--yellow);
+      }
     }
 
     &.red {
@@ -54,6 +60,10 @@ body {
         var(--red) 50%,
         var(--red) 100%
       );
+
+      &:hover {
+        border-color: var(--red);
+      }
     }
 
     &.grey {
@@ -63,6 +73,10 @@ body {
         var(--grey) 50%,
         var(--grey) 100%
       );
+
+      &:hover {
+        border-color: var(--grey);
+      }
     }
   }
 }
