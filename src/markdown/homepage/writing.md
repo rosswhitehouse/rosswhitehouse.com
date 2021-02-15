@@ -1,14 +1,12 @@
 ---
-slug: "/blog"
+slug: "/writing"
 date: "2020/07/16"
-title: "3. Posts"
+title: "3. Writing"
 id: 3
 posttype: "homepage-section"
 ---
 
-## And here's some things I've written! _I like to write_ about _new techniques_ I learn, and _tutorials_ to remind myself how to function.
-
-Check out some _blogs_ I've written about what I do, they've been published on the GatsbyJS website, Front End Weekly and my Medium profile.
+## Writing.
 
 - [2020 Wrap Up](/posts/2020-wrapup)
 - [Git-ing Started (with GitHub)](/posts/git-starter)

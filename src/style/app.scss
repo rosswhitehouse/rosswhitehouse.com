@@ -33,11 +33,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 3rem;
 }
 
 div {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.6;
 }
 
@@ -67,8 +67,17 @@ em {
 a {
   text-decoration: underline;
   &:hover {
-    background: $white;
+    background: lighten($main, 20%);
   }
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5rem;
 }
 
 .home {
@@ -78,7 +87,7 @@ a {
 
     &__intro {
       color: black;
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
 
       span {
@@ -142,13 +151,9 @@ a {
     .panel {
       &:nth-of-type(odd) {
         background-image: linear-gradient(to bottom, lighten($main, 5%), $main);
-      }
 
-      ul {
-        list-style: none;
-        padding: 0;
-        li {
-          margin-bottom: 5rem;
+        a:hover {
+          background: $white;
         }
       }
     }
@@ -158,7 +163,6 @@ a {
   h3 {
     margin-bottom: 0.4em;
     line-height: 1em;
-    display: inline-block;
     padding: 4px 10px 2px 5px;
   }
 }
@@ -173,7 +177,7 @@ a {
 
   > div,
   > article {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
   }
 
@@ -195,6 +199,36 @@ pre[class*="language-"] > code {
 
 .codepen {
   margin: 0 auto;
+}
+
+.work-item {
+  display: flex;
+  align-items: flex-start;
+
+  // &:nth-of-type(odd) {
+  span {
+    order: 2;
+  }
+
+  ul {
+    padding-right: 2rem;
+  }
+  // }
+
+  span {
+    width: 40%;
+  }
+
+  ul {
+    width: 60%;
+    margin: 0;
+    list-style: initial;
+    padding-inline-start: 40px;
+
+    li {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {

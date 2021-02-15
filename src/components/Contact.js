@@ -10,12 +10,12 @@ const Contact = () => {
     return (
         <div className="contact">
             <div className="icons">
-                <a href="https://twitter.com/RossWhitehouse"><TwitterSVG /></a>
-                <a href="https://www.instagram.com/ross.dw/"><InstagramSVG /></a>
-                <a href="https://www.codepen.io/rossdw"><CodepenSVG /></a>
-                <a href="mailto:ross.dw@live.com"><MailSVG /></a>
-                <a href="https://github.com/rosswhitehouse"><GithubSVG /></a>
-                <a href="https://medium.com/@RossWhitehouse"><MediumSVG /></a>
+                <a href="https://twitter.com/RossWhitehouse" aria-label="Twitter"><TwitterSVG /></a>
+                <a href="https://www.instagram.com/ross.dw/" aria-label="Instagram"><InstagramSVG /></a>
+                <a href="https://www.codepen.io/rossdw" aria-label="Codepen"><CodepenSVG /></a>
+                <a href="mailto:ross.dw94@gmail.com" aria-label="Email"><MailSVG /></a>
+                <a href="https://github.com/rosswhitehouse" aria-label="Github"><GithubSVG /></a>
+                <a href="https://medium.com/@RossWhitehouse" aria-label="Medium"><MediumSVG /></a>
             </div>
         </div>
     )
