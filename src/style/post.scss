@@ -5,7 +5,7 @@
   .panel {
     font-size: 2rem;
     > * {
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
     }
 
@@ -46,6 +46,14 @@
 
     li {
       margin-bottom: 2rem;
+    }
+
+    &.wrapup {
+      margin: 1rem 0;
+    }
+
+    &.footer {
+      margin-top: 1rem;
     }
   }
 

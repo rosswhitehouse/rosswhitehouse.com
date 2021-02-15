@@ -9,9 +9,16 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   background: var(--main);
-  border-top: 1rem solid var(--main);
-  border-bottom: 1rem solid var(--main);
   color: var(--font-color);
+  padding: 1rem 0;
+
+  &#theme-rainbow {
+    background: var(--sideways-rainbow);
+
+    .home .main .panel:nth-of-type(odd) a:hover {
+      background: var(--highlight);
+    }
+  }
 }
 
 h1,
@@ -74,7 +81,7 @@ li {
     position: relative;
     margin-top: 3rem;
     .icons {
-      display: block;
+      display: flex;
       z-index: 2;
       position: relative;
       padding: 0 10px;
@@ -82,19 +89,23 @@ li {
       > a {
         color: var(--font-color);
         padding: 5px;
-        display: inline-block;
-        height: 1em;
         width: 8%;
         text-align: center;
-        font-size: 6rem;
-        line-height: 1;
+        font-size: 1em;
+        line-height: 1em;
         margin-right: 2%;
+
         > svg {
           width: 100%;
+          vertical-align: middle;
         }
+
         &:hover {
-          color: var(--main);
-          background: none;
+          color: var(--font-color);
+          background: var(--main);
+          > svg {
+            fill: var(--inner);
+          }
         }
       }
     }
@@ -102,14 +113,20 @@ li {
 
   .main {
     height: auto;
+    background: var(--background);
 
     .panel {
+      transform: skew(0deg, -3deg);
       &:nth-of-type(odd) {
         background: var(--main);
 
         a:hover {
           background: var(--background);
         }
+      }
+      > article,
+      > div {
+        transform: skew(0deg, 3deg);
       }
     }
   }
@@ -123,19 +140,31 @@ li {
 }
 
 .footer.panel {
-  padding: 10rem 0;
+  padding: 15rem 0;
+  > div {
+    padding: 0;
+  }
 }
 
 .panel {
-  padding: 15rem 2.5rem;
   background: var(--background);
-  transform: skew(0deg, -3deg);
+
+  &.header,
+  &.footer {
+    transform: initial;
+
+    > div,
+    > article {
+      transform: initial;
+    }
+  }
 
   > div,
   > article {
+    padding: 15rem 2.5rem;
     max-width: 960px;
     margin: 0 auto;
-    transform: skew(0deg, 3deg);
+    background: var(--inner);
   }
 
   &.blank {

@@ -6,10 +6,40 @@
   --grey: #555;
   --grey-background: #333;
   --grey-highlight: #7b7b7b;
+  --rainbow: linear-gradient(
+    white 5%,
+    #ff0018 5%,
+    #ff0018 20%,
+    #ffa52c 20%,
+    #ffa52c 35%,
+    #ffff41 35%,
+    #ffff41 50%,
+    #008018 50%,
+    #008018 65%,
+    #0000f9 65%,
+    #0000f9 80%,
+    #86007d 80%,
+    #86007d 95%,
+    white 95%
+  );
+  --sideways-rainbow: linear-gradient(
+    90deg,
+    #ff0018 16%,
+    #ffa52c 16%,
+    #ffa52c 33%,
+    #ffff41 33%,
+    #ffff41 50%,
+    #008018 50%,
+    #008018 66%,
+    #0000f9 66%,
+    #0000f9 83%,
+    #86007d 83%
+  );
   --white: white;
   --black: black;
   --main: white;
   --background: white;
-  --highlight: white;
+  --highlight: #ddd;
   --font-color: black;
+  --inner: transparent;
 }

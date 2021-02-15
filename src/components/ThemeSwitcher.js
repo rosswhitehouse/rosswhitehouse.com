@@ -20,6 +20,7 @@ const ThemeSwitcher = () => {
       <button className="theme-switcher-button yellow" aria-label="set theme to yellow" onClick={() => setTheme('yellow')}></button>
       <button className="theme-switcher-button red" aria-label="set theme to red" onClick={() => setTheme('red')}></button>
       <button className="theme-switcher-button grey" aria-label="set theme to grey" onClick={() => setTheme('grey')}></button>
+      <button className="theme-switcher-button rainbow" aria-label="set theme to rainbow" onClick={() => setTheme('rainbow')}></button>
     </div>
   );
 };

@@ -15,6 +15,11 @@ body {
     --highlight: var(--grey-highlight);
     --font-color: var(--white);
   }
+
+  &#theme-rainbow {
+    --main: var(--rainbow);
+    --inner: white;
+  }
 }
 
 .theme-switcher {
@@ -76,6 +81,14 @@ body {
 
       &:hover {
         border-color: var(--grey);
+      }
+    }
+
+    &.rainbow {
+      background: var(--rainbow);
+
+      &:hover {
+        border-color: white;
       }
     }
   }

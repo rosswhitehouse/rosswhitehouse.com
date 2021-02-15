@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby';
 
+import '../style/app.scss'
 import '../style/post.scss'
 import Footer from '../components/Footer';
 import ThemeSwitcher from '../components/ThemeSwitcher';
@@ -15,9 +16,12 @@ const PostsPage = ({ data }) => {
       <ThemeSwitcher />
       <div className="post-container all-posts">
         <div className="panel post-header">
-          <h1>All Posts</h1>
+          <div>
+            <h1>All Posts</h1>
+          </div>
         </div>
         <div className="panel">
+          <div>
           <ul>
             {data.allMarkdownRemark.edges.map(({ node }) => {
               const { slug, title, excerpt } = node.frontmatter;
@@ -30,9 +34,10 @@ const PostsPage = ({ data }) => {
               );
             })}
           </ul>
+          </div>
         </div>
-      </div >
       <Footer />
+      </div >
     </>
   );
 };
