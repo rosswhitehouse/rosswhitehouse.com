@@ -1,4 +1,15 @@
-$main: #ff7f50;
-$highlight: lighten(coral, 15%);
-$grey: #222;
-$white: #e6e6e6;
+:root {
+  --yellow: #fff176;
+  --yellow-highlight: lighten(--yellow, 15%);
+  --red: #ff8a80;
+  --red-highlight: lighten(--red, 15%);
+  --grey: #555;
+  --grey-background: #333;
+  --grey-highlight: lighten(--grey, 15%);
+  --white: white;
+  --black: black;
+  --main: white;
+  --background: white;
+  --highlight: white;
+  --font-color: black;
+}

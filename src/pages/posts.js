@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 
 import '../style/post.scss'
 import Footer from '../components/Footer';
+import ThemeSwitcher from '../components/ThemeSwitcher';
 
 const PostsPage = ({ data }) => {
   return (
@@ -11,6 +12,7 @@ const PostsPage = ({ data }) => {
       <Helmet>
         <title>Posts - Ross Whitehouse</title>
       </Helmet>
+      <ThemeSwitcher />
       <div className="post-container all-posts">
         <div className="panel post-header">
           <h1>All Posts</h1>
@@ -23,7 +25,7 @@ const PostsPage = ({ data }) => {
                 <li key={slug} >
                   <h2><a href={`/posts/${slug}`}>{title}</a></h2>
                   <p>{excerpt}</p>
-                  [<a href={`/posts/${slug}`}><em>Read More</em></a>]
+                  [<a href={`/posts/${slug}`}>Read More</a>]
                 </li>
               );
             })}

@@ -1,4 +1,5 @@
 @import "variables";
+@import "themes";
 
 html {
   font-size: 10px;
@@ -7,9 +8,10 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  background: $main;
-  border-top: 1rem solid $main;
-  border-bottom: 1rem solid $main;
+  background: var(--main);
+  border-top: 1rem solid var(--main);
+  border-bottom: 1rem solid var(--main);
+  color: var(--font-color);
 }
 
 h1,
@@ -50,24 +52,10 @@ p {
   margin-bottom: 0.8em;
 }
 
-em {
-  font-style: normal;
-  position: relative;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 33%,
-    $highlight 34%,
-    $highlight 79%,
-    transparent 80%,
-    transparent 100%
-  );
-}
-
 a {
   text-decoration: underline;
   &:hover {
-    background: lighten($main, 20%);
+    background: var(--highlight);
   }
 }
 
@@ -81,34 +69,18 @@ li {
 }
 
 .home {
-  .header {
-    background: white;
-    box-sizing: border-box;
-
-    &__intro {
-      color: black;
-      max-width: 960px;
-      margin: 0 auto;
-
-      span {
-        display: inline-block;
-      }
-    }
-  }
-
   .contact {
     text-align: center;
     position: relative;
     margin-top: 3rem;
     .icons {
       display: block;
-      background: white;
       z-index: 2;
       position: relative;
       padding: 0 10px;
       text-align: left;
       > a {
-        color: darken($main, 15%);
+        color: var(--font-color);
         padding: 5px;
         display: inline-block;
         height: 1em;
@@ -121,27 +93,10 @@ li {
           width: 100%;
         }
         &:hover {
-          color: black;
+          color: var(--main);
           background: none;
         }
       }
-    }
-  }
-
-  .heading {
-    margin-bottom: 0.4em;
-    line-height: 1em;
-    display: inline-block;
-    padding: 4px 10px 2px 5px;
-    margin: 0.8em 0 0.4em;
-
-    &--grey {
-      background: white;
-    }
-
-    &--white {
-      background: $grey;
-      color: white;
     }
   }
 
@@ -150,10 +105,10 @@ li {
 
     .panel {
       &:nth-of-type(odd) {
-        background-image: linear-gradient(to bottom, lighten($main, 5%), $main);
+        background: var(--main);
 
         a:hover {
-          background: $white;
+          background: var(--background);
         }
       }
     }
@@ -173,7 +128,7 @@ li {
 
 .panel {
   padding: 10rem 2.5rem;
-  background: white;
+  background: var(--background);
 
   > div,
   > article {
@@ -184,7 +139,7 @@ li {
   &.blank {
     height: 1rem;
     padding: 0;
-    background: $main;
+    background: var(--main);
   }
 }
 
@@ -194,7 +149,7 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] > code {
-  border-color: $main;
+  border-color: var(--main);
 }
 
 .codepen {

@@ -6,6 +6,7 @@ import '../style/prism-theme.scss'
 import '../style/app.scss'
 import '../style/post.scss'
 import Footer from "../components/Footer"
+import ThemeSwitcher from "../components/ThemeSwitcher"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -17,6 +18,7 @@ export default function Template({
       <Helmet>
         <title>{frontmatter.title} - Ross Whitehouse</title>
       </Helmet>
+      <ThemeSwitcher />
       <div className="post-container">
         <div className="post-header panel">
           <h1>{frontmatter.title}</h1>

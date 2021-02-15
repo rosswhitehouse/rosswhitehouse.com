@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 import '../style/app.scss'
+import ThemeSwitcher from '../components/ThemeSwitcher';
 
 const IndexPage = ({ data }) => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = ({ data }) => {
       <Helmet>
         <title>Ross Whitehouse</title>
       </Helmet>
+      <ThemeSwitcher />
       <Header />
       <main className="main">
         <Main panels={data.allMarkdownRemark.edges} />
