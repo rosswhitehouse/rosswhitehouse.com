@@ -16,7 +16,6 @@ posttype: "homepage-section"
     <li>Worked on React Apps and Python APIs for internal tools including a Zendesk App and a Chrome Extension.</li>
     <li>Created a Gitlab CI/CD Pipeline and implemented a Vue app and A/B testing framework in a Zendesk Theme for the <a href="https://help.hotjar.com">Help Center</a>.</li>
   </ul>
-
 </div>
 
 ### [Black Codher](https://blackcodher.com/).
