@@ -1,10 +1,11 @@
 ---
 slug: "nth-child"
-date: "2019/12/13"
-title: "The Power of Nth Child and All-CSS Dynamic Widths"
+date: "2019-12-13"
+title: "👪 The Power of Nth Child and All-CSS Dynamic Widths"
 type: "post"
 excerpt: "Here's an awesome use for CSS nth-child rules that I learned recently."
 ---
+
 Here's an awesome use for CSS nth-child rules that I learned recently.
 
 Here goes:
@@ -20,9 +21,9 @@ Style appropriately.
 So we count the number of boxes, then add a class such as one-of-three to assign some width-dependent CSS. Something like this:
 
 ```javascript
-var wrapper = document.getElementById('div.buttonWrap');
+var wrapper = document.getElementById("div.buttonWrap");
 var count = wrapper.childElementCount();
-wrapper.classList.add('children-' + count);
+wrapper.classList.add("children-" + count);
 ```
 
 This isn’t bad. Sure, it’ll work, but what if we could remove that JavaScript altogether? What if we can do this with just HTML and CSS?
@@ -40,10 +41,10 @@ To start with let’s line up our variables. We don’t know how many buttons we
 
 But CSS can (and will) tell us some things about the position of individuals. We can specifically target:
 
-* `first-child` – the first one
-* `last-child` – the last one
-* `nth-child` – the nth one. You can also substitute n for an equation to get every one after the second (`n + 3`), every second one (`2n`) the even ones (`even`) and odd ones.
-* `nth-last-child(n)` – now this one is interesting. This pseudo selector gets the nth from last. So if `n = 2`, that’s the second to last. This can help us in our situation.
+- `first-child` – the first one
+- `last-child` – the last one
+- `nth-child` – the nth one. You can also substitute n for an equation to get every one after the second (`n + 3`), every second one (`2n`) the even ones (`even`) and odd ones.
+- `nth-last-child(n)` – now this one is interesting. This pseudo selector gets the nth from last. So if `n = 2`, that’s the second to last. This can help us in our situation.
 
 > NB. There are more of these. [CSS tricks has a great reference](https://css-tricks.com/useful-nth-child-recipies/). With pictures!
 
@@ -51,7 +52,7 @@ Let’s say we have just the one button. In this case this button is both the fi
 
 ```css
 .button:first-child:last-child {
-    width: 100%;
+  width: 100%;
 }
 ```
 
@@ -62,11 +63,11 @@ Now is the clever bit, using that `nth-last-child` selector we looked at. Let’
 ```css
 // When there's two boxes, the first one is the second-from-last
 .button:first-child:nth-last-child(2) {
-    width: 50%;
+  width: 50%;
 }
 // When there's three, the first is third-from-last
 .button:first-child:nth-last-child(3) {
-    width: 33.33%;
+  width: 33.33%;
 }
 ```
 
@@ -78,12 +79,12 @@ Then we just need to target the other buttons to make them the same size too. Lu
 // When there's two boxes, the first one is the second-from-last
 .button:first-child:nth-last-child(2),
 .button:first-child:nth-last-child(2) ~ .box {
-    width: 50%;
+  width: 50%;
 }
 // When there's three, the first is third-from-last
 .button:first-child:nth-last-child(3),
 .button:first-child:nth-last-child(3) ~ .box {
-    width: 33.33%;
+  width: 33.33%;
 }
 ```
 
@@ -99,4 +100,5 @@ And that’s it! It’s a handy little CSS solution for a JavaScript problem. An
 </div>
 
 ## Bonus Ball
+
 Nowadays with CSS variables and modern techniques there might be a way to look over that first selector with numbers 1–3. If there is drop me a comment! If there’s an even better way, or you just prefer the JavaScript way I’d like to hear about that too. Is this unnecessarily complicated for the real world or is it one step away from being useful? Let me know!

@@ -1,7 +1,7 @@
 ---
 slug: "git-starter"
-date: "2020/12/24"
-title: "Git-ing Started with Github"
+date: "2020-12-24"
+title: "🤔 Git-ing Started with Github"
 type: "post"
 excerpt: "A brief intro to Git and Github processes."
 ---

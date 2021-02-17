@@ -1,7 +1,7 @@
 ---
 slug: "2020-wrapup"
-date: "2020/12/23"
-title: "2020 Wrap Up: Should we just forget about this one?"
+date: "2020-12-23"
+title: "📅 2020 Wrap Up: Should we just forget about this one?"
 type: "post"
 excerpt: "I review a year's worth of developer progress and look forward to 2021."
 ---

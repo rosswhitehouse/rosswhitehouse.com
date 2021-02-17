@@ -1,10 +1,11 @@
 ---
 slug: "rollup-vs-gulp"
-date: "2020/09/11"
-title: "Rollup Vs Gulp"
+date: "2020-09-11"
+title: "🤷 Rollup Vs Gulp"
 type: "post"
 excerpt: "This week at work I needed to implement a Javscript compiler so we can use some ES6 features and minify some script files. Also SCSS would be a nice bonus!"
 ---
+
 This week at work I needed to implement a _Javscript compiler_ so we can use some ES6 features and minify some script files. Also SCSS would be a nice bonus!
 
 ## Context
@@ -20,42 +21,44 @@ Over the last couple of months I've added a _Gitlab CI/CD pipeline_ to lint, zip
 At this time I was also learning to use Svelte (shoutout Scott Tolinski and his [excellent Svelte Series](https://www.leveluptutorials.com/tutorials/svelte-for-beginners)), and Svelte uses Rollup to compile. So here's me thinking this must be the new hotness, let's give it a bash.
 
 First thing we need is a bunch of npm packages:
-* `rollup`
-* `rollup-plugin-terser` - We'll use [Terser](https://github.com/terser/terser) for compression.
-* `@rollup/plugin-babel` - [Babel](https://babeljs.io/) is probably the most popular JS compiler around.
-* `@babel/core` - The Babel compiler core.
-* `@babel/preset-env` - This is a preset for Babel so we can use ES6.
-* `globby` - We need this so we can use globs like `src/**/*.js`.
+
+- `rollup`
+- `rollup-plugin-terser` - We'll use [Terser](https://github.com/terser/terser) for compression.
+- `@rollup/plugin-babel` - [Babel](https://babeljs.io/) is probably the most popular JS compiler around.
+- `@babel/core` - The Babel compiler core.
+- `@babel/preset-env` - This is a preset for Babel so we can use ES6.
+- `globby` - We need this so we can use globs like `src/**/*.js`.
 
 Here's our `rollup.config.js`:
-```javascript
-import { sync } from 'globby';
-import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
 
-const configs = sync('src/**/*.js').map(inputFile => ({
-    input: inputFile,
-    output: {
-        dir: './assets/js',
-        format: 'cjs'
-    },
-    plugins: [
-        babel({
-            exclude: 'node_modules/**',
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                    modules: false,
-                    targets: {
-                        ie: '10'
-                    }
-                }
-              ]
-            ]
-        }),
-        terser()
-    ]
+```javascript
+import { sync } from "globby";
+import babel from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
+
+const configs = sync("src/**/*.js").map((inputFile) => ({
+  input: inputFile,
+  output: {
+    dir: "./assets/js",
+    format: "cjs",
+  },
+  plugins: [
+    babel({
+      exclude: "node_modules/**",
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            modules: false,
+            targets: {
+              ie: "10",
+            },
+          },
+        ],
+      ],
+    }),
+    terser(),
+  ],
 }));
 
 export default configs;
@@ -83,46 +86,49 @@ That's why I tried something different.
 
 We need a very similar babel setup here, but we need some different stuff to get Gulp going.
 
-* `gulp` - core files.
-* `gulp-babel` - Babel loader.
-* `gulp-uglify` - Uglifies files. I tried `gulp-minify`, but that likes to give you a regular `.js` file, and a `.min.js` file, but all I really need is a like-for-like.
-* `gulp-sass` - SCSS compiler.
-* `node-sass` - Library that provides bindings for the CSS compiler
+- `gulp` - core files.
+- `gulp-babel` - Babel loader.
+- `gulp-uglify` - Uglifies files. I tried `gulp-minify`, but that likes to give you a regular `.js` file, and a `.min.js` file, but all I really need is a like-for-like.
+- `gulp-sass` - SCSS compiler.
+- `node-sass` - Library that provides bindings for the CSS compiler
 
 And here's our `gulpfile.js`:
 
 ```javascript
-const { watch, src, dest, series, parallel } = require('gulp');
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
+const { watch, src, dest, series, parallel } = require("gulp");
+const babel = require("gulp-babel");
+const uglify = require("gulp-uglify");
 
-var sass = require('gulp-sass');
-sass.compiler = require('node-sass');
+var sass = require("gulp-sass");
+sass.compiler = require("node-sass");
 
 function js() {
-    return src('src/js/*.js')
-        .pipe(babel({
-            presets: ['@babel/preset-env']
-        }))
-        .pipe(uglify())
-        .pipe(dest('assets'))
+  return src("src/js/*.js")
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
+    .pipe(uglify())
+    .pipe(dest("assets"));
 }
 
 function scss() {
-    return src('src/scss/*.scss')
-        .pipe(sass()).on('error', function (err) {
-            console.log(err.toString());
-            this.emit('end');
-        })
-        .pipe(dest('assets'));
+  return src("src/scss/*.scss")
+    .pipe(sass())
+    .on("error", function(err) {
+      console.log(err.toString());
+      this.emit("end");
+    })
+    .pipe(dest("assets"));
 }
 
 exports.default = function() {
-    series(scss, js);
-    console.log('Watching src/scss and src/js');
-    watch('src/scss/*scss', scss);
-    watch('src/js/*js', js);
-}
+  series(scss, js);
+  console.log("Watching src/scss and src/js");
+  watch("src/scss/*scss", scss);
+  watch("src/js/*js", js);
+};
 
 exports.build = parallel(scss, js);
 ```

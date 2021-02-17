@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 
 import '../style/app.scss'
 import '../style/post.scss'
+import HomeButton from '../components/HomeButton';
 import Footer from '../components/Footer';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 
@@ -16,6 +17,7 @@ const PostsPage = ({ data }) => {
       <ThemeSwitcher />
       <div className="post-container all-posts">
         <div className="panel post-header">
+          <HomeButton />
           <div>
             <h1>All Posts</h1>
           </div>
@@ -24,10 +26,12 @@ const PostsPage = ({ data }) => {
           <div>
           <ul>
             {data.allMarkdownRemark.edges.map(({ node }) => {
-              const { slug, title, excerpt } = node.frontmatter;
+              console.log(node.frontmatter)
+              const { slug, date, title, excerpt } = node.frontmatter;
               return (
                 <li key={slug} >
                   <h2><a href={`/posts/${slug}`}>{title}</a></h2>
+                  <p>{date.split('-').reverse().join('/')}</p>
                   <p>{excerpt}</p>
                   [<a href={`/posts/${slug}`}>Read More</a>]
                 </li>
@@ -55,6 +59,7 @@ export const query = graphql`
         node {
           frontmatter {
             slug
+            date
             title
             excerpt
           }
