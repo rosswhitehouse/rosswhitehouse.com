@@ -19,7 +19,7 @@ Here's some things I identified I want to change:
 
 - First, it's wordy! The last iteration of my site is basically a one-pager, but there was so much text! You don't need to know my life story, the important thing is for the user to understand who I am and what I do.
 - Next, it lacks a bit of flare. There are these massive content blocks that I'm in love with, but that's sort of it, visually. I'd like a bit more... Oomph!
-- There are no toys. One of my favourite sites that they reviewed, (jhey.dev/)[https://jhey.dev/], has loads of cool little toys. Simple things like a colour switcher to some really involved stuff that had me saying "How is that even happening?". I want that.
+- There are no toys. One of my favourite sites that they reviewed, [jhey.dev](https://jhey.dev/), has loads of cool little toys. Simple things like a colour switcher to some really involved stuff that had me saying "How is that even happening?". I want that.
 
 ## Step 1: The Rewrite 📝
 

@@ -1,8 +1,10 @@
 @import "variables";
 @import "themes";
+@import "../../node_modules/nes.css/css/nes.css";
+@import "nes-theme";
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -75,7 +77,8 @@ li {
 }
 
 .home-button {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   left: 2rem;
   top: 2rem;
   padding: 0;

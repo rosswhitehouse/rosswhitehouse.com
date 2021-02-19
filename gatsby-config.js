@@ -63,7 +63,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Space Mono', 'Montserrat']
+          families: ['Space Mono', 'Montserrat', 'Press Start 2P']
         }
       }
     }

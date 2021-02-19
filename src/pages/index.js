@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Main from '../components/Main'
 import Header from '../components/Header';
@@ -8,15 +8,17 @@ import '../style/app.scss'
 import ThemeSwitcher from '../components/ThemeSwitcher';
 
 const IndexPage = ({ data }) => {
+  const [ theme, setTheme ] = useState('');
+
   return (
     <div className="home">
       <Helmet>
         <title>Ross Whitehouse</title>
       </Helmet>
-      <ThemeSwitcher />
-      <Header />
+      <ThemeSwitcher theme={theme} setTheme={setTheme} />
+      <Header theme={theme} />
       <main className="main">
-        <Main panels={data.allMarkdownRemark.edges} />
+        <Main theme={theme} panels={data.allMarkdownRemark.edges} />
       </main>
       <Footer />
     </div>

@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 
-const ThemeSwitcher = () => {
-  const [ theme, setTheme ] = useState('default');
+const ThemeSwitcher = ({ theme, setTheme }) => {
 
   useEffect(() => {
     // On first load, get stored theme. Set stored theme or set to default.
@@ -21,6 +20,9 @@ const ThemeSwitcher = () => {
       <button className="theme-switcher-button red" aria-label="set theme to red" onClick={() => setTheme('red')}></button>
       <button className="theme-switcher-button grey" aria-label="set theme to grey" onClick={() => setTheme('grey')}></button>
       <button className="theme-switcher-button rainbow" aria-label="set theme to rainbow" onClick={() => setTheme('rainbow')}></button>
+      <button className="theme-switcher-button nes" aria-label="set theme to NES" onClick={() => setTheme('nes')}>
+        <i className="snes-jp-logo"></i>
+      </button>
     </div>
   );
 };

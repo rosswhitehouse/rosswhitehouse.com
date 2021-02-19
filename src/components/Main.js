@@ -4,7 +4,7 @@ import Panel from './Panel';
 
 const Main = (props) => {
     const renderPanels = props.panels.map((panel) => {
-        return <Panel key={panel.node.frontmatter.id} panel={panel.node} />
+        return <Panel theme={props.theme} key={panel.node.frontmatter.id} panel={panel.node} />
     })
     return (
         <>

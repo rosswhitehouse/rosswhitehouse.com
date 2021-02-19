@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Helmet } from 'react-helmet'
 import { graphql } from "gatsby"
 
@@ -12,6 +12,7 @@ import ThemeSwitcher from "../components/ThemeSwitcher"
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
+  const [ theme, setTheme ] = useState('');
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
@@ -19,10 +20,10 @@ export default function Template({
       <Helmet>
         <title>{frontmatter.title} - Ross Whitehouse</title>
       </Helmet>
-      <ThemeSwitcher />
+      <ThemeSwitcher theme={theme} setTheme={setTheme} />
       <div className="post-container">
         <div className="post-header panel">
-          <HomeButton />
+          <HomeButton theme={theme} />
           <div>
             <h1>{frontmatter.title}</h1>
             <p>First posted {frontmatter.date.split('-').reverse().join('/')}</p>

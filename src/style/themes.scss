@@ -1,4 +1,8 @@
 body {
+  &:not(#theme-nes) {
+    cursor: initial;
+  }
+
   &#theme-yellow {
     --main: var(--yellow);
     --highlight: var(--yellow-highlight);
@@ -25,9 +29,9 @@ body {
 .theme-switcher {
   position: fixed;
   top: 20px;
-  left: calc(100vw - 150px);
+  right: 20px;
   background: #ddd;
-  width: 130px;
+  width: 70px;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -87,6 +91,18 @@ body {
     &.rainbow {
       background: var(--rainbow);
 
+      &:hover {
+        border-color: white;
+      }
+    }
+
+    &.nes {
+      i {
+        transform: scale(0.6);
+        &:before {
+          left: -16px;
+        }
+      }
       &:hover {
         border-color: white;
       }

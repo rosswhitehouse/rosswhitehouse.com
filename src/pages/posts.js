@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby';
 
@@ -9,15 +9,16 @@ import Footer from '../components/Footer';
 import ThemeSwitcher from '../components/ThemeSwitcher';
 
 const PostsPage = ({ data }) => {
+  const [ theme, setTheme ] = useState('');
   return (
     <>
       <Helmet>
         <title>Posts - Ross Whitehouse</title>
       </Helmet>
-      <ThemeSwitcher />
+      <ThemeSwitcher theme={theme} setTheme={setTheme} />
       <div className="post-container all-posts">
         <div className="panel post-header">
-          <HomeButton />
+          <HomeButton theme={theme} />
           <div>
             <h1>All Posts</h1>
           </div>
@@ -26,7 +27,6 @@ const PostsPage = ({ data }) => {
           <div>
           <ul>
             {data.allMarkdownRemark.edges.map(({ node }) => {
-              console.log(node.frontmatter)
               const { slug, date, title, excerpt } = node.frontmatter;
               return (
                 <li key={slug} >

@@ -1,9 +1,9 @@
-import { Link } from 'gatsby';
 import React from 'react';
 
-const HomeButton = () => {
+const HomeButton = ({ theme }) => {
+  const isNesTheme = theme === 'nes';
   return (
-    <a href="/" className="home-button">Ross Whitehouse</a>
+    <a href="/" className={`home-button ${isNesTheme ? 'nes-btn' : ''}`}>Ross Whitehouse</a>
   );
 };
 
