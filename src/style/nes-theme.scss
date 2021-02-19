@@ -1,0 +1,20 @@
+body#theme-nes {
+  cursor: inherit;
+  font-family: "Press Start 2P";
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: inherit;
+  }
+
+  .nes-container {
+    margin: 0 auto 3rem;
+  }
+
+  .post-container .panel.post-header h1 {
+    font-size: 5rem;
+  }
+}
