@@ -17,4 +17,23 @@ body#theme-nes {
   .post-container .panel.post-header h1 {
     font-size: 5rem;
   }
+
+  .nes-icon.coin {
+    animation: spin 1.5s linear infinite;
+    transform: scale(3, 3);
+    transform-origin: 50% 50%;
+    margin: 0 0 2rem 2rem;
+  }
+}
+
+@keyframes spin {
+  20% {
+    transform: scale(3, 3);
+  }
+  50% {
+    transform: scale(-3, 3);
+  }
+  80% {
+    transform: scale(3, 3);
+  }
 }
