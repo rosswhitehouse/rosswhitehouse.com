@@ -40,7 +40,7 @@ body {
   flex-wrap: wrap;
   padding: 5px;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 10;
 
   .theme-switcher-button {
     box-sizing: border-box;
@@ -116,7 +116,8 @@ body {
 @media screen and (max-width: 430px) {
   .theme-switcher {
     top: auto;
-    bottom: 0;
+    bottom: 2rem;
+    right: 2rem;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
