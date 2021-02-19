@@ -49,3 +49,9 @@ body#theme-nes {
     transform: scale(3, 3);
   }
 }
+
+@media screen and (max-width: 430px) {
+  .nes-icon.is-large {
+    transform: scale(1.5);
+  }
+}

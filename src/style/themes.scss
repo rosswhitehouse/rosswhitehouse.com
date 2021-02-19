@@ -112,3 +112,27 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 430px) {
+  .theme-switcher {
+    top: auto;
+    bottom: 0;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    .theme-switcher-button {
+      width: 30px;
+      height: 30px;
+      border-width: 1px;
+
+      &.nes i {
+        transform: scale(0.4);
+        width: 30px;
+        height: 30px;
+        margin-top: -0.5rem;
+        margin-left: -0.4rem;
+      }
+    }
+  }
+}

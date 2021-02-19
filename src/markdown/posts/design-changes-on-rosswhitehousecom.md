@@ -1,7 +1,7 @@
 ---
 slug: "design-changes-on-rosswhitehousecom"
 date: "2021-02-12"
-title: "🧑‍🎨 Design Changes on RossWhitehouse.com"
+title: "🧑‍🎨 Design Changes on my Personal Site"
 type: "post"
 excerpt: "I talk through some of the design choices I made on this site recently, and how I coded them together."
 ---
