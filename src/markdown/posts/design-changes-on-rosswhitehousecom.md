@@ -110,7 +110,7 @@ Next I wanted to try something a bit ambitious. A friend of mine showed me [NES.
 
 ![The NES.css website.](../../images/site_rework-nes_css.png)
 
-The installation is simple, it's just an npm package that needs installing and the CSS is referenced at the top of my file. There are a couple of things that happen by default, like font family changes, that needed to be overwritten by default. In fact, I ended up adding a separate file for the NES theme to handle the font and sizing (it's a big, blocky font), and I also wanted to make use of some of the social icons in the NES CSS package.
+The installation is simple, it's just an npm package that needs installing and the CSS is referenced at the top of my file. There are a couple of things that happen by default, like font family changes, that needed to be overwritten. In fact, I ended up adding a separate file for the NES theme to handle the font and sizing (it's a big, blocky font), and I also wanted to make use of some of the social icons in the NES CSS package.
 
 ![The NES.css website.](../../images/site_rework-nes_theme.png)
 
