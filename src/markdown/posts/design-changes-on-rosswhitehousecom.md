@@ -6,7 +6,7 @@ type: "post"
 excerpt: "I talk through some of the design choices I made on this site recently, and how I coded them together."
 ---
 
-I just rewrote soe bits on the site and thought it was a great idea to share it!
+I just rewrote some bits on the site and thought it was a great idea to share it!
 
 ## Inspiration 💡
 
