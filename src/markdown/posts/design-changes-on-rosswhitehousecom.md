@@ -106,4 +106,14 @@ I had to add a white column behind the text, as no text colour stands out on top
 
 The final touch on this one was rotating the gradient for use at the top and bottom of the page, rather than having one red horizontal line. You can see that at the top of this page (depending on your theme).
 
+Next I wanted to try something a bit ambitious. A friend of mine showed me [NES.css](https://nostalgic-css.github.io/NES.css/) a few months ago and I've been looking for an excuse to use it. This seemed ideal! As you can see, it's super nostalgic and very cute.
+
+![The NES.css website.](../../images/site_rework-nes_css.png)
+
+The installation is simple, it's just an npm package that needs installing and the CSS is referenced at the top of my file. There are a couple of things that happen by default, like font family changes, that needed to be overwritten by default. In fact, I ended up adding a separate file for the NES theme to handle the font and sizing (it's a big, blocky font), and I also wanted to make use of some of the social icons in the NES CSS package.
+
+![The NES.css website.](../../images/site_rework-nes_theme.png)
+
+The result looks great, but the font is a bit hard to read. It's definitely not the ideal way to view the site, but I love it as a little demo!
+
 Do you have a favourite theme, or any tips on anything I could do better? Let me know via the links below!
