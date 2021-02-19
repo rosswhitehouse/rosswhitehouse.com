@@ -18,11 +18,23 @@ body#theme-nes {
     font-size: 5rem;
   }
 
+  .panel {
+    padding: 0 1rem;
+  }
+
   .nes-icon.coin {
     animation: spin 1.5s linear infinite;
     transform: scale(3, 3);
     transform-origin: 50% 50%;
     margin: 0 0 2rem 2rem;
+  }
+
+  @media screen and (max-width: 640px) {
+    .nes-icon.coin {
+      display: block;
+      margin-top: 3rem;
+      margin-left: 0;
+    }
   }
 }
 
